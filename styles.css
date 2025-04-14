@@ -1,0 +1,147 @@
+@font-face {
+    font-family: Nunito-Regular;
+    src: url(assets\fonts\Nunito-Regular)
+}
+
+
+header{
+    display: flex;
+    width: auto;
+    height: 148px;
+    background-color: #FFAF00;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: #FFAF00;
+    width: auto;
+    height: 207px;
+    margin-top: 654px;
+}
+
+.header-button{
+    display:flex;
+    align-content: space-around;
+}
+
+.logo{
+    align-items: center;
+    width: 375px;
+    height: 55px;
+}
+
+
+.search-banner{
+    background-color: #FFAF00;
+    width: auto;
+    height: 377px;
+    margin-top: 107px;
+}
+
+
+.panier{
+    width: 35px;
+    height: auto;
+}
+
+
+
+/* Formulaire de recherche*/
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    margin-top: 107px;
+    background-color: #FFAF00;
+    font-family: Nunito-Regular;
+  }
+
+.left-section,
+.right-section {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.left-section input {
+  width: 300px;
+  height: 39px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.datetime-inputs {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.datetime-inputs input,
+.datetime-inputs select {
+  height: 39px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.reset {
+  background: none;
+  border: none;
+  color: gray;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-btn {
+  background-color: #444;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.banniere {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    position: relative;
+  }
+
+  .texte-defilant {
+    display: inline-block;
+    white-space: nowrap;
+    animation: defilement 45s linear infinite;
+    font-size: 2em;
+    padding-left: 100%;
+  }
+
+  @keyframes defilement {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  /* Responsive */
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="assets\img\Logo Comparo Voyage.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComparoVoyage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="fonts" href="assets/fonts/Nunito-Regular.ttf">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+      <img class="logo" src="assets/img/logo_fond_blanc.jpg" Voyage fond blanc.jpg alt="Logo ComparoVoyage">
+      </div>
+      <div class="header-button">
+        <button>Login</button>
+        <button>Panier</button>
+      </div>
+    </header>
+
+    <div class="banniere">
+      <div class="texte-defilant">
+        Les destinations: Strasbourg   Paris   Metz   Lille   Dijon  Lyon   Paris CDG et autres !
+      </div>
+    </div>
+
+    <!--Formulaire de recherche-->
+
+    <form class="form-container">
+      <div class="left-section">
+
+        <!--Input départ et destination-->
+
+        <label for="depart">Où voulez vous partir ?</label>
+        <input type="text" id="depart" name="depart" placeholder="Départ : Gare/Ville/Arrêt">
+        <input type="text" id="destination" name="destination" placeholder="Destination : Gare/Ville/Arrêt">
+      </div>
+    
+       <!--Choix de la date-->
+
+      <div class="right-section">
+        <label for="date">Quand ?</label>
+
+        <div class="datetime-inputs">
+          <input type="date" id="date" name="date" value="2025-03-31">
+          
+          <!--Sélection des heures-->
+
+          <select name="hour">
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+          </select>
+    
+          <select name="minute">
+            <option value="00">00</option>
+            <option value="05">05</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="35">35</option>
+            <option value="40">40</option>
+            <option value="45">45</option>
+            <option value="50">50</option>
+            <option value="55">55</option>
+          </select>
+        </div>
+    
+        <div class="actions">
+          <button type="reset" class="reset">Réinitialiser</button>
+          <button type="submit" class="search-btn">LANCEZ LA RECHERCHE</button>
+
+        </div>
+      </div>
+    </form>
+<section class="actus">
+  <div>
+    <h3>Bienvenue sur mon Site !</h3>
+    <p>Ce site vous permet de comparer et acheter vos billet de train ou de bus</p>
+  </div>
+  <div>
+    <p>
+      actus 2
+    </p>
+  </div>
+</section>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
