@@ -13,4 +13,4 @@ Comparo Voyage est un site web de comparaison de voyages permettant aux utilisat
 📱 Interface responsive pour une expérience mobile optimale
 
 🛠️ Technologies utilisées
-Frontend : HTML5, CSS3, JavaScript .
+Frontend : HTML5, CSS3, (JavaScript, un peu plus tard) .

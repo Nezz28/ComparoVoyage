@@ -27,6 +27,7 @@ header {
   padding: 0 40px;
   height: 148px;
   background-color: #FFAF00;
+  justify-content: right;
 }
 
 .header-button {
@@ -44,6 +45,7 @@ header {
   cursor: pointer;
   background-color:#F2FC00;
   border-radius: 50px;
+  align-content: end;
 }
 
 .logo{
@@ -231,6 +233,9 @@ footer {
       transform: translateX(-100%);
     }
   }
+
+
+
 
 
   /* Responsive */
