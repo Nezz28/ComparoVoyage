@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/x-icon" href="assets\img\Logo Comparo Voyage.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ComparoVoyage</title>
+  <link rel="icon" type="image/x-icon" href="assets\img\Logo Comparo Voyage.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="fonts" href="assets/fonts/Nunito-Regular.ttf">
 </head>
 <body>
   <main>
+    <!-- En-tête -->
     <header>
       <img class="logo" src="assets/img/logo_fond_blanc.jpg" alt="Logo ComparoVoyage">
       <div class="header-button">
@@ -17,36 +18,30 @@
         <button>Login</button>
       </div>
     </header>
-    
 
+    <!-- Bannière défilante -->
     <div class="banniere">
       <div class="texte-defilant">
         Les destinations: Strasbourg   Paris   Metz   Lille   Dijon  Lyon   Paris CDG et autres !
       </div>
     </div>
 
-    <!--Formulaire de recherche-->
-
+    <!-- Formulaire de recherche -->
     <form class="form-container">
       <div class="left-section">
-
-        <!--Input départ et destination-->
-
+        <!-- Input départ et destination -->
         <label for="depart">Où voulez vous partir ?</label>
         <input type="text" id="depart" name="depart" placeholder="Départ : Gare/Ville/Arrêt">
         <input type="text" id="destination" name="destination" placeholder="Destination : Gare/Ville/Arrêt">
       </div>
-    
-       <!--Choix de la date-->
 
       <div class="right-section">
+        <!-- Choix de la date -->
         <label for="date">Quand ?</label>
-
         <div class="datetime-inputs">
           <input type="date" id="date" name="date" value="2025-03-31">
-          
-          <!--Sélection des heures-->
 
+          <!-- Sélection des heures -->
           <select name="hour">
             <option value="00">00</option>
             <option value="01">01</option>
@@ -73,7 +68,7 @@
             <option value="22">22</option>
             <option value="23">23</option>
           </select>
-    
+
           <select name="minute">
             <option value="00">00</option>
             <option value="05">05</option>
@@ -89,42 +84,45 @@
             <option value="55">55</option>
           </select>
         </div>
-    
+
+        <!-- Boutons d'action -->
         <div class="actions">
           <button type="reset" class="reset">Réinitialiser</button>
-          <button type="submit" class="search-btn">LANCEZ LA RECHERCHE</button>
-
+          <button type="submit" class="search-btn"><a href="search_result.html" target="_blank">LANCER LA RECHERCHE</a></button>
         </div>
       </div>
     </form>
 
-<section class="actus-container">
-  <div class="actus-box">
-    <h3>Bienvenue sur mon site !</h3>
-    <p>Ce site vous permet de comparer et acheter vos billet de train ou de bus</p>
-    <img src="assets/img/new.png" alt="Nouveau" class="new-icon">
-  </div>
+    <!-- Section actualités -->
+    <section class="actus-container">
+      <div class="actus-box">
+        <h3>Bienvenue sur mon site !</h3>
+        <p>Ce site vous permet de comparer et acheter vos billet de train ou de bus</p>
+        <img src="assets/img/new.png" alt="Nouveau" class="new-icon">
+      </div>
 
-  <div class="actus-box">
-    <h3>Les partenaires:</h3>
-    <div class="partenaires">
-      <img src="assets/img/sncf.png" alt="Logo SNCF">
-      <img src="assets/img/blablacar.png" alt="Logo BlaBlaCar">
-    </div>
-  </div>
-</section>
+      <div class="actus-box">
+        <h3>Les partenaires:</h3>
+        <div class="partenaires">
+          <img src="assets/img/sncf.png" alt="Logo SNCF">
+          <img src="assets/img/blablacar.png" alt="Logo BlaBlaCar">
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Pied de page -->
   <footer>
     <div class="socialmedia">
       <img src="assets\icons\facebook.png" alt="facebook">
       <img src="assets\icons\instagram.png" alt="instagram">
     </div>
     <div class="legacy">
-    <ul>
-      <li>Mention légales</li>
-      <li>Politique de confidentialité</li>
-      <li>CGV</li>
-    </ul>
+      <ul>
+        <li>Mention légales</li>
+        <li>Politique de confidentialité</li>
+        <li>CGV</li>
+      </ul>
     </div>
   </footer>
 </body>
