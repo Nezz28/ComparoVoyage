@@ -420,3 +420,120 @@ footer {
     }
   }
   
+
+ /* RESPONSIVE 2 EME PAGE*/
+
+ @media (max-width: 768px) {
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 148px;
+    background-color: #FFAF00;
+  }
+  
+  .header-button {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  .header-button button {
+    width: 100px;
+    height: 62px;
+    font-family: Nunito-Regular;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    background-color:#F2FC00;
+    border-radius: 50px;
+    align-content: end;
+  }
+
+
+/* Section des résultats */
+.result-section {
+  padding: 40px 20px;
+  font-family: Nunito-Regular, sans-serif;
+  background-color: white;
+}
+
+/* Barres du haut */
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-result,
+.back-button {
+  background-color: #FFAF00;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Carte de résultat */
+.result-card {
+  width: 100%;
+  max-width: 350px; 
+  margin: 0 auto 25px auto; 
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #FFAF00;
+  border-radius: 30px;
+  padding: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: white;
+}
+
+/* Sections dans la carte */
+.result-left,
+.result-center,
+.result-right,
+.result-price {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Ligne jaune */
+.line {
+  width: 70%;
+  height: 8px;
+  background-color: #FFAF00;
+  border-radius: 10px;
+  margin: 10px auto;
+  position: static;
+}
+
+/* Logo des compagnies */
+.company-logo {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Bouton détails */
+.details-btn {
+  background-color: #FFAF00;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+ }
