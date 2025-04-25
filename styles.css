@@ -213,12 +213,15 @@ footer {
     width: 100%;
     overflow: hidden;
     background-color: #ffffff;
+    border-color: #FFAF00;
     color: rgb(0, 0, 0);
     padding: 10px 0;
     position: relative;
   }
 
   .texte-defilant {
+    border-color: #FFAF00;
+    background-color: #ffffff;
     display: inline-block;
     white-space: nowrap;
     animation: defilement 45s linear infinite;
