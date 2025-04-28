@@ -1,6 +1,8 @@
 @font-face {
-    font-family: Nunito-Regular;
-    src: url(assets\fonts\Nunito-Regular)
+    font-family: "Nunito-Regular";
+    src: url(./assets/fonts/Nunito-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Assure que toute la page prend 100% de la hauteur */
@@ -104,6 +106,7 @@ footer {
     margin-top: 107px;
     background-color: #FFAF00;
     font-family: Nunito-Regular;
+
   }
 
 .left-section,
@@ -363,39 +366,46 @@ footer {
       margin: 0 auto;
       height: 45px;
       width: auto;
+      padding: 15px;
     }
   
     .header-button {
       flex-direction: column;
       align-items: center;
       gap: 10px;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
     }
   
     .header-button button {
-      width: 200px;
-      height: 50px;
+      max-width: 200px;
       font-size: 14px;
       font-weight: bold;
+      
     }
   
     .form-container {
+      border-radius: 10px;
       flex-direction: column;
       align-items: center;
       gap: 30px;
       padding: 20px;
       margin-top: 50px;
+      margin-left: 25px;
+      margin-right: 25px;
     }
   
     .left-section,
     .right-section {
-      width: 100%;
-      max-width: 90vw;
+      max-width: 100em;
+      border-radius: 15px;
     }
   
     .datetime-inputs {
       flex-direction: column;
       align-items: stretch;
       gap: 10px;
+      border-radius: 15px;
     }
   
     .actions {
@@ -412,8 +422,7 @@ footer {
     }
   
     .actus-box {
-      width: 100%;
-      max-width: 90vw;
+      max-width: 100%;
     }
   
     .search-btn,
