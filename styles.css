@@ -55,6 +55,8 @@ header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px  #444;
 }
 
 footer {
@@ -69,14 +71,6 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-
-
-.logo{
-    align-items: center;
-    width: 375px;
-    height: 55px;
 }
 
 
@@ -106,6 +100,7 @@ footer {
     margin-top: 107px;
     background-color: #FFAF00;
     font-family: Nunito-Regular;
+    border-radius: 10px;
 
   }
 
@@ -116,6 +111,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  border-radius: 10px;
 }
 
 .left-section input {
@@ -124,12 +120,14 @@ footer {
   padding-left: 10px;
   border: 1px solid #ccc;
   font-size: 14px;
+  border-radius: 10px;
 }
 
 .datetime-inputs {
   display: flex;
   gap: 10px;
   align-items: center;
+  border-radius: 10px;
 }
 
 .datetime-inputs input,
@@ -137,6 +135,7 @@ footer {
   height: 39px;
   padding: 5px;
   font-size: 14px;
+  border-radius: 10px;
 }
 
 .actions {
@@ -144,6 +143,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  border-radius: 10px;  
 }
 
 .reset {
@@ -153,6 +153,7 @@ footer {
   text-decoration: underline;
   cursor: pointer;
   font-size: 14px;
+  border-radius: 10px;
 }
 
 .search-btn {
@@ -163,6 +164,7 @@ footer {
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
+  border-radius: 10px;
 }
 
 
@@ -230,6 +232,7 @@ footer {
     animation: defilement 45s linear infinite;
     font-size: 1em;
     padding-left: 100%;
+    word-spacing: 15px;
   }
 
   @keyframes defilement {
@@ -300,13 +303,19 @@ footer {
   text-align: center;
 }
 
-.result-left,
 .result-right {
   width: 20%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.result-left{
+  margin-left: 10px;
 }
 
 .result-center {
   width: 40%;
+  display: flex;
 }
 
 .result-price {
@@ -318,6 +327,8 @@ footer {
 .company-logo {
   height: 40px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 /* Ligne entre départ et arrivée */
@@ -363,10 +374,9 @@ footer {
     .logo {
       position: static;
       transform: none;
-      margin: 0 auto;
       height: 45px;
       width: auto;
-      padding: 15px;
+      transform: translateY(10px);
     }
   
     .header-button {
