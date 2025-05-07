@@ -6,6 +6,7 @@
   <title>ComparoVoyage</title>
   <link rel="icon" type="image/x-icon" href="./assets/img/Logo Comparo Voyage.png">
   <link rel="stylesheet" href="./styles.css">
+  <script src="./js/script.js" defer></script>
   <!-- <link rel="fonts" href="/assets/fonts/Nunito-Regular.ttf"> -->
 </head>
 <body>
@@ -16,13 +17,14 @@
       <div class="header-button">
         <button>Panier</button>
         <button>Login</button>
+        <button>Mes Billets</button>
       </div>
     </header>
 
     <!-- Bannière défilante -->
     <div class="banniere">
       <div class="texte-defilant">
-        Les destinations: Strasbourg   Paris   Metz   Lille   Dijon  Lyon   Paris CDG et autres !
+        Ceci est un projet d'école
       </div>
     </div>
 
@@ -88,14 +90,18 @@
         <!-- Boutons d'action -->
         <div class="actions">
           <button type="reset" class="reset">Réinitialiser</button>
-          <button type="submit" class="search-btn"><a href="search_result.html">LANCER LA RECHERCHE</a></button>
+          <a class="search-btn" href="search_result.html">LANCER LA RECHERCHE</a>
         </div>
       </div>
     </form>
 
+
+    
     <!-- Section actualités -->
+     
     <section class="actus-container">
       <div class="actus-box">
+        <h2>Les actus:</h2>
         <h3>Bienvenue sur mon site !</h3>
         <p>Ce site vous permet de comparer et acheter vos billet de train ou de bus</p>
         <img src="assets/img/new.png" alt="Nouveau" class="new-icon">
@@ -118,11 +124,9 @@
       <a href="https://instagram.com/" target="_blank"> <img src="assets\icons\instagram.png" alt="instagram"> </a>
     </div>
     <div class="legacy">
-      <ul>
-        <li>Mention légales</li>
-        <li>Politique de confidentialité</li>
-        <li>CGV</li>
-      </ul>
+        <p>Mention légale</p>
+        <p>politique de confidentialité</p>
+        <p>CGV</p>
     </div>
   </footer>
 </body>

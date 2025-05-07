@@ -12,6 +12,7 @@ html, body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  font-family: "Nunito-Regular";
 }
 
 /* Le main prend toute la hauteur restante entre header et footer */
@@ -40,14 +41,21 @@ header {
 .header-button button {
   width: 137px;
   height: 62px;
-  font-family: Nunito-Regular;
   padding: 8px 16px;
   font-size: 14px;
-  border: none;
-  cursor: pointer;
+  box-shadow:  #444;
   background-color:#F2FC00;
   border-radius: 50px;
   align-content: end;
+  cursor: pointer;
+
+}
+
+h2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 
 .logo{
@@ -64,15 +72,18 @@ footer {
     height: 207px;
     width: 100%;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
   }
 
-
-.socialmedia{
+.legacy{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+  flex-direction: column;
+  justify-content: center;
 
+}
 
 .search-banner{
     background-color: #FFAF00;
@@ -176,7 +187,6 @@ footer {
     padding: 60px 20px;
     background-color: white;
     flex-wrap: wrap;
-    font-family: Nunito-Regular;
 }
 
 .actus-box {
@@ -232,7 +242,6 @@ footer {
     animation: defilement 45s linear infinite;
     font-size: 1em;
     padding-left: 100%;
-    word-spacing: 15px;
   }
 
   @keyframes defilement {
