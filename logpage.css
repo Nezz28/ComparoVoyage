@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Nunito-Regular";
+    src: url(./assets/fonts/Nunito-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Assure que toute la page prend 100% de la hauteur */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito-Regular";
+}
+
+
+/* Le main prend toute la hauteur restante entre header et footer */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 148px;
+  background-color: #FFAF00;
+  justify-content: right;
+}
+
+.header-button {
+  display: flex;
+  gap: 15px;
+}
+
+.header-button button {
+  width: 137px;
+  height: 62px;
+  padding: 8px 16px;
+  font-size: 14px;
+  box-shadow:  #444;
+  background-color:#F2FC00;
+  border-radius: 50px;
+  align-content: end;
+  cursor: pointer;
+
+}
+
+h2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.logo{
+  height: 55px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px  #444;
+}
+
+footer {
+    background-color: #FFAF00;
+    height: 207px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.legacy{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+.log_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+    margin: 107px auto 0 auto; 
+    border: 6px solid #FFAF00;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
+    padding: 60px 20px;
+    background-color: white;
+    width: 700px;               
+    box-sizing: border-box; 
+}
+
+
+  .texte-defilant {
+    border-color: #FFAF00;
+    background-color: #ffffff;
+    display: inline-block;
+    white-space: nowrap;
+    animation: defilement 45s linear infinite;
+    font-size: 1em;
+    padding-left: 100%;
+  }
+
+  form{
+    display: flex;
+    text-align: center;
+  }
+  
+  #email {
+    width: 350px;
+  }
+
+  #password{
+    width: 350px;
+  }
+
+  #connexion{
+    width: 100px;
+  }
+
+  @keyframes defilement {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    
+  }
