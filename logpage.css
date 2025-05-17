@@ -13,6 +13,7 @@ html, body {
   display: flex;
   flex-direction: column;
   font-family: "Nunito-Regular";
+  text-align: center;
 }
 
 
@@ -72,8 +73,8 @@ footer {
     background-color: #FFAF00;
     height: 207px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    padding-top: 30px;
+    margin-top: 50px;
   }
 
 .legacy{
@@ -88,55 +89,230 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     gap: 60px;
-    margin: 107px auto 0 auto; 
+    margin:30px auto 0 auto; 
     border: 6px solid #FFAF00;
     border-radius: 30px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
-    padding: 60px 20px;
-    background-color: white;
-    width: 700px;               
-    box-sizing: border-box; 
+    padding: 100px;
+    background-color: white;     
+    width: 300px;
+    height: 300px;
+    text-align: center;       
 }
 
+.header-button {
+  display: flex;
+  gap: 15px;
+}
 
-  .texte-defilant {
-    border-color: #FFAF00;
-    background-color: #ffffff;
-    display: inline-block;
-    white-space: nowrap;
-    animation: defilement 45s linear infinite;
-    font-size: 1em;
-    padding-left: 100%;
-  }
+/* Style pour les liens boutons du header */
+.header-link {
+  width: 137px;
+  height: 62px;
+  padding: 8px 16px;
+  font-size: 14px;
+  box-shadow:  #444;
+  background-color:#F2FC00;
+  border-radius: 50px;
+  align-content: center;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.header-link:hover {
+  transform: scale(1.04);
+}
+
 
   form{
     display: flex;
     text-align: center;
   }
   
-  #email {
-    width: 350px;
-  }
-
-  #password{
-    width: 350px;
-  }
-
   #connexion{
     width: 100px;
   }
 
-  @keyframes defilement {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+/* --- Burger Icon --- */
+.burger {
+  display: none;        /* caché sur desktop */
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  gap: 6px;
+  z-index: 1002;
+}
+.burger span {
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: #333;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+
 
   @media (max-width: 1200px) {
-    
+  body {
+      font-size: 16px;
+      align-content: center;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .logo {
+      position: static;
+      transform: none;
+      height: 45px;
+      width: auto;
+      transform: translateY(10px);
+    }
+  
+    .header-button {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+    }
+  
+      .header-button button {
+        max-width: 200px;
+        font-size: 14px;
+        font-weight: bold;
+        border: 10px;
+        
+      }
   }
+
+  @media (max-width:768px){
+.log_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  border: 6px solid #FFAF00;
+   border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
+    padding: 100px;
+    background-color: white;     
+    width: 200px;
+    height: 120px;
+    text-align: center;       
+}
+
+.header-link {
+  width: 85px;
+  height: 50px;
+  padding: 8px 16px;
+  font-size: 14px;
+  box-shadow:  #444;
+  background-color:#F2FC00;
+  border-radius: 50px;
+  align-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  padding: auto;;
+
+}
+
+  header {
+    height: 125px;            /* Hauteur réduite */
+    padding: 0 10px;         /* Moins de marge à gauche/droite */
+  }
+  .logo {
+    height: 35px;            /* Logo plus petit */
+  }
+  .header-button button {
+    width: 95px;
+    height: 38px;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  footer {
+    height: 90px;            /* Footer plus petit */
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+  .legacy p {
+    font-size: 12px;
+    margin: 2px 0;
+  }
+  .socialmedia img {
+    height: 22px;
+  }
+
+  html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito-Regular";
+  text-align: center;
+}
+
+h1{
+  transform: translateY(70px);
+  transform: translateX(50);
+}
+
+  .header-button {
+    position: absolute;
+    top: 90px; /* ou hauteur de ton header */
+    right: 18px;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    overflow: hidden;
+    width: 190px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+    z-index: 1001;
+  }
+  .header-button.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .header-link {
+    padding: 16px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ffd70015;
+    text-align: left;
+    font-size: 16px;
+    background: none;
+  }
+  .header-link:last-child {
+    border-bottom: none;
+  }
+  .burger {
+    display: flex;
+    position: absolute;
+    right: 18px;
+    top: 22px;
+  }
+}
+
+
+
+
+
+
+}
+
+
+    
