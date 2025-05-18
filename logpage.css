@@ -72,7 +72,7 @@ h2{
 footer {
     background-color: #FFAF00;
     height: 207px;
-    width: 100%;
+    width: auto;
     padding-top: 30px;
     margin-top: 50px;
   }
@@ -85,20 +85,110 @@ footer {
 }
 
 
+/* Style du bloc du formulaire */
 .log_box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 60px;
-    margin:30px auto 0 auto; 
-    border: 6px solid #FFAF00;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
-    padding: 100px;
-    background-color: white;     
-    width: 300px;
-    height: 300px;
-    text-align: center;       
+  background: #fff;
+  border: 4px solid #FFAF00;
+  border-radius: 24px;
+  box-shadow: 0 6px 32px rgba(255, 175, 0, 0.07), 0 1.5px 12px #f7cf5d23;
+  padding: 40px 30px 32px 30px;
+  width: 400px;
+  margin: 60px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  transition: box-shadow 0.2s;
+}
+
+.log_box:hover {
+  box-shadow: 0 10px 36px rgba(255, 175, 0, 0.15), 0 2px 16px #ffaf0055;
+}
+
+/* Titre */
+.log_box h1 {
+  font-size: 2.3rem;
+  margin-bottom: 18px;
+  font-family: "Nunito-Regular", Arial, sans-serif;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Inputs */
+.log_box input[type="text"],
+.log_box input[type="password"] {
+  width: 100%;
+  height: 52px;
+  font-size: 18px;
+  border-radius: 14px;
+  border: 2px solid #FFAF00;
+  background: #fffefa;
+  padding: 0 18px;
+  margin-bottom: 8px;
+  transition: border 0.18s, box-shadow 0.15s;
+  box-shadow: 0 1.5px 8px #ffe0661c;
+  font-family: "Nunito-Regular", Arial, sans-serif;
+}
+
+
+
+/* Bouton Connexion */
+.log_box #connexion {
+  width: 100%;
+  max-width: 210px;
+  height: 50px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #FFAF00 80%, #F2FC00 100%);
+  color: #333;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #ffaf0036;
+  transition: background 0.2s, transform 0.12s;
+  font-family: "Nunito-Regular", Arial, sans-serif;
+}
+
+.log_box #signup{
+    width: 100%;
+  max-width: 210px;
+  height: 50px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #FFAF00 80%, #F2FC00 100%);
+  color: #333;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #ffaf0036;
+  transition: background 0.2s, transform 0.12s;
+  font-family: "Nunito-Regular", Arial, sans-serif;
+}
+
+.log_box #connexion:hover {
+  background: linear-gradient(90deg, #F2FC00 30%, #FFAF00 100%);
+  transform: scale(1.045);
+}
+.log_box #signup:hover {
+  background: linear-gradient(90deg, #F2FC00 30%, #FFAF00 100%);
+  transform: scale(1.045);
+}
+
+/* Lien mot de passe oublié */
+.log_box a {
+  color: #FFAF00;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: text-decoration 0.2s, color 0.18s;
+  margin-top: 6px;
+}
+
+.log_box a:hover {
+  color: #ff8000;
+  text-decoration: underline;
 }
 
 .header-button {
@@ -108,8 +198,8 @@ footer {
 
 /* Style pour les liens boutons du header */
 .header-link {
-  width: 137px;
-  height: 62px;
+  width: 100px;
+  height: 42px;
   padding: 8px 16px;
   font-size: 14px;
   box-shadow:  #444;
@@ -211,6 +301,8 @@ footer {
     text-align: center;       
 }
 
+
+
 .header-link {
   width: 85px;
   height: 50px;
@@ -262,10 +354,29 @@ footer {
   text-align: center;
 }
 
-h1{
-  transform: translateY(70px);
-  transform: translateX(50);
+.log_box h1 {
+  font-size: 2.3rem;
+  margin-bottom: 18px;
+  font-family: "Nunito-Regular", Arial, sans-serif;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
+
+/* Lien mot de passe oublié */
+.log_box a {
+  color: #FFAF00;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: text-decoration 0.2s, color 0.18s;
+  margin-top: -40px;
+}
+
+.log_box a:hover {
+  color: #ff8000;
+  text-decoration: underline;
+}
+
 
   .header-button {
     position: absolute;
@@ -307,12 +418,6 @@ h1{
   }
 }
 
-
-
-
-
-
-}
 
 
     

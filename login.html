@@ -11,18 +11,10 @@
 <body>
   <main>
     <!-- En-tête -->
-    <header>
-      <img class="logo" src="assets/img/logo_fond_blanc.jpg" alt="Logo ComparoVoyage">
-<div class="header-button">
-  <a href="#" class="header-link">Panier</a>
-  <a href="/login.html" class="header-link">Login</a>
-  <a href="#" class="header-link">Mes Billets</a>
-</div>
-    </header>
-
+<header>
+  <img class="logo" src="assets/img/logo_fond_blanc.jpg" alt="Logo ComparoVoyage">
 
   <!-- Menu burger (mobile) -->
-
   <div class="burger" id="burger-menu">
     <span></span>
     <span></span>
@@ -31,7 +23,7 @@
 
   <nav class="header-button">
     <a href="#" class="header-link">Panier</a>
-    <a href="#" class="header-link">Login</a>
+    <a href="login.html" class="header-link">Login</a>
     <a href="#" class="header-link">Mes Billets</a>
   </nav>
 </header>
@@ -39,12 +31,13 @@
 
 
         <!-- Formulaire de log -->
-    <form class="log_box">
+    <form class="log_box" method="post"> <!--Post pour ne pas a avoir les identifiant dans l'url-->
         <!-- Input login et mdp -->
         <h1>Bienvenue</h1>
-        <input type="text" id="email" name="email" placeholder="adresse@email.fr">
+        <input type="text" id="email" name="email" required="@" placeholder="adresse@email.fr">
         <input type="password" id="password" name="password" placeholder="Mot de passe" >
-        <input type="button" id="connexion" value="Connexion"><br>
+        <input type="submit" id="connexion" value="Connexion" >
+        <input type="submit" id="signup" value="Insciption"><br>
         <a href="#">Mot de passe oublié</a>
     </form>
 </main>

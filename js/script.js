@@ -1,17 +1,15 @@
+document.querySelector('.log_box').addEventListener('submit', function(e) {
+  const email = document.getElementById('email').value;
 
-  // Burger menu toggle
-  const burger = document.getElementById('burger-menu');
-  const nav = document.querySelector('.header-button');
-
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    burger.classList.toggle('active');
-  });
-
-  // Ferme le menu quand on clique ailleurs
-  document.addEventListener('click', function(e) {
-    if (!burger.contains(e.target) && !nav.contains(e.target)) {
-      nav.classList.remove('open');
-      burger.classList.remove('active');
-    }
-  });
+  // Vérifie la présence de "@" et "."
+  if (!email.includes('@') || !email.includes('.')) {
+    e.preventDefault(); // Empêche l'envoi du formulaire
+    alert("L'adresse email doit contenir un '@' et un '.' !");
+    // Optionnel : mettre en rouge le champ
+    document.getElementById('email').style.borderColor = 'red';
+    return false;
+  } else {
+    // Optionnel : remet la bordure normale
+    document.getElementById('email').style.borderColor = '#FFAF00';
+  }
+});s
