@@ -23,10 +23,9 @@
   <nav class="header-button">
     <a href="#" class="header-link">Panier</a>
     <a href="/login.html" class="header-link">Login</a>
-    <a href="#" class="header-link">Mes Billets</a>
+    <a href="./mes_billets.html" class="header-link">Mes Billets</a>
   </nav>
 </header>
-    </header>
 
     <!-- Bannière défilante -->
     <div class="banniere">
@@ -40,18 +39,18 @@
       <div class="left-section">
         <!-- Input départ et destination -->
         <label for="depart">Où voulez vous partir ?</label>
-        <input type="text" id="depart" name="depart" placeholder="Départ : Gare/Ville/Arrêt">
-        <input type="text" id="destination" name="destination" placeholder="Destination : Gare/Ville/Arrêt">
+        <input type="text" required id="depart" name="depart" placeholder="Départ : Gare/Ville/Arrêt">
+        <input type="text" required id="destination" name="destination" placeholder="Destination : Gare/Ville/Arrêt">
       </div>
 
       <div class="right-section">
         <!-- Choix de la date -->
         <label for="date">Quand ?</label>
         <div class="datetime-inputs">
-          <input type="date" id="date" name="date" value="">
+          <input type="date" required id="date" name="date" value="">
           <p> (Sélection de l'horaire)</p>
           <!-- Sélection des heures -->
-          <select name="hour">
+          <select name="hour" required>
             <option value="00">00</option>
             <option value="01">01</option>
             <option value="02">02</option>
@@ -97,13 +96,11 @@
         <!-- Boutons d'action -->
         <div class="actions">
           <button type="reset" class="reset">Réinitialiser</button>
-          <a class="search-btn" href="search_result.html">LANCER LA RECHERCHE</a>
+            <button class="search-btn" type="button" id="search-btn">LANCER LA RECHERCHE</button>
         </div>
       </div>
     </form>
 
-
-    
     <!-- Section actualités -->
      
     <section class="actus-container">

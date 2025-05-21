@@ -1,0 +1,300 @@
+@font-face {
+    font-family: "Nunito-Regular";
+    src: url(./assets/fonts/Nunito-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Assure que toute la page prend 100% de la hauteur */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito-Regular";
+}
+
+/* Le main prend toute la hauteur restante entre header et footer */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 148px;
+  background-color: #FFAF00;
+  justify-content: right;
+}
+
+.header-button {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.header-button button {
+  width: 100px;
+  height: 50px;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color:#F2FC00;
+  border-radius: 50px;
+  align-content: end;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-button {
+  display: flex;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style pour les liens boutons du header */
+.header-link {
+  width: 100px;
+  height: 42px;
+  padding: 8px 16px;
+  font-size: 14px;
+  box-shadow:  #444;
+  background-color:#F2FC00;
+  border-radius: 50px;
+  align-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-link:hover {
+  transform: scale(1.04);
+}
+
+h2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.logo{
+  height: 55px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px  #444;
+}
+
+.qrcode-btn {
+  background-color: #FFAF00;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.top-result,
+.back-button{
+  background-color: #FFAF00;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  }
+
+footer {
+    background-color: #FFAF00;
+    height: 207px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+.legacy{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+/* Carte de résultat */
+.result-card {
+  max-width: 900px; 
+  width: 100%;
+  margin: 0 auto 25px auto; /* centre la carte */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 4px solid #FFAF00;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Sections dans la carte */
+.result-left,
+.result-center,
+.result-right,
+.result-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.result-right {
+  width: 20%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.result-left{
+  margin-left: 10px;
+}
+
+.result-center {
+  width: 40%;
+  display: flex;
+}
+
+.result-price {
+  width: 15%;
+  gap: 8px;
+}
+
+/* Logo des compagnies */
+.company-logo {
+  height: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* --- Styles burger par défaut : caché sur desktop --- */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  gap: 7px;
+  z-index: 1200;
+}
+
+.burger span {
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: #333;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  gap: 7px;
+  z-index: 1200;
+}
+.burger span {
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: #333;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Mobile/tablette : burger visible, menu caché */
+@media (max-width: 900px) {
+  .burger {
+    display: flex;
+    position: absolute;
+    right: 18px;
+    top: 16px;
+  }
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 8px;
+    background: #fff;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    width: 160px;
+    z-index: 1100;
+    gap: 0;
+    padding: 0;
+  }
+  .header-nav.open {
+    display: flex;
+  }
+  .header-link {
+    width: 100%;
+    padding: 16px 14px;
+    border-bottom: 1px solid #ffaf0017;
+    text-align: left;
+    background: none;
+    font-size: 16px;
+    border-radius: 0;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  .header-link:last-child {
+    border-bottom: none;
+  }
+}
+/* Desktop : nav visible, burger caché */
+@media (min-width: 901px) {
+  .burger {
+    display: none !important;
+  }
+  .header-nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 18px;
+    background: none;
+    box-shadow: none;
+    width: auto;
+    padding: 0;
+  }
+}
