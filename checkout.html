@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComparoVoyage</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/Logo Comparo Voyage.png">
+  <link rel="stylesheet" href="./checkout.css">
+  <script src="./js/script.js" defer></script>
+  <!-- <link rel="fonts" href="/assets/fonts/Nunito-Regular.ttf"> -->
+</head>
+<body>
+  <main>
+    <!-- En-tête -->
+    <header>
+      <img class="logo" src="assets/img/logo_fond_blanc.jpg" alt="Logo ComparoVoyage">
+   <div class="burger" id="burger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="header-button">
+    <a href="/panier.html" class="header-link">Panier</a>
+    <a href="/login.html" class="header-link">Login</a>
+    <a href="./mes_billets.html" class="header-link">Mes Billets</a>
+  </nav>
+    </header>
+<body>
+     <div class="container">
+        <div class="model">
+            <form class="form" method="post">
+                <div class="info-form">
+                    <div class="input_container">
+                        <label class="input_label" for="info_field">Nom complet</label>
+                        <input type="text" class="input_field" id="info_field" name="input-name" title="Inpit title" placeholder="Nom Complet">
+                    </div>
+                    <div class="input_container">
+                        <label class="input_label" for="info_field">Numéro de carte</label>
+                        <input type="number" class="input_field" id="info_field" name="input-name" title="Inpit title" placeholder="0000 0000 0000">
+                    </div>
+                    <div class="input_container">
+                        <label class="input_label" for="info_field">Date d'expiration / CVV</label>
+                        <div class="split">
+                            <input type="text" class="input_field" id="info_field" name="input-name" title="Expiry Date" placeholder="01/01/27">
+                            <input type="number" class="input_field" id="info_field" name="cvv" title="CVV" placeholder="CVV">
+                        </div>
+                    </div>
+                </div>
+                <button class="checkout-btn">Paiement</button>
+                <div class="separator">
+                    <hr class="line">
+                    <p>Mode de paiement</p>
+                    <hr class="line">
+                </div>
+                <div class="payment-options">
+                    <button name="paypal" type="button">
+                        <img src="/assets/img/paypal.png" alt="">
+                    </button>
+                    <button name="apple-pay" type="button">
+                        <img src="/assets/img/apple.png" alt="">
+                    </button>
+                    <button name="google-pay" type="button">
+                        <img src="/assets/img/google.png" alt="">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ComparoVoyage</title>
+  <meta name="keywords" content="comparateur">
+  <title>ComparoVoyage - Recherche de Trajet</title>
   <link rel="icon" type="image/x-icon" href="./assets/img/Logo Comparo Voyage.png">
   <link rel="stylesheet" href="./styles.css">
   <script src="./js/script.js" defer></script>
-  <!-- <link rel="fonts" href="/assets/fonts/Nunito-Regular.ttf"> -->
 </head>
 <body>
   <main>
@@ -21,7 +21,7 @@
   </div>
 
   <nav class="header-button">
-    <a href="#" class="header-link">Panier</a>
+    <a href="/panier.html" class="header-link">Panier</a>
     <a href="/login.html" class="header-link">Login</a>
     <a href="./mes_billets.html" class="header-link">Mes Billets</a>
   </nav>
@@ -96,16 +96,17 @@
         <!-- Boutons d'action -->
         <div class="actions">
           <button type="reset" class="reset">Réinitialiser</button>
-            <button class="search-btn" type="button" id="search-btn">LANCER LA RECHERCHE</button>
+            <a href="search_result.html" class="search-btn" type="button" id="search-btn">LANCER LA RECHERCHE </a>
         </div>
       </div>
     </form>
 
     <!-- Section actualités -->
+
+     <h2 class="text-actus">Les actus:</h2>
      
     <section class="actus-container">
       <div class="actus-box">
-        <h2>Les actus:</h2>
         <h3>Bienvenue sur mon site !</h3>
         <p>Ce site vous permet de comparer et acheter vos billet de train ou de bus</p>
         <img src="assets/img/new.png" alt="Nouveau" class="new-icon">
@@ -128,7 +129,7 @@
       <a href="https://instagram.com/" target="_blank"> <img src="assets\icons\instagram.png" alt="instagram"> </a>
     </div>
     <div class="legacy">
-        <p>Mention légale</p>
+        <a href="/mention_légale.html">Mention légale</a>
         <p>politique de confidentialité</p>
         <p>CGV</p>
     </div>
