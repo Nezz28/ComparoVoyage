@@ -39,7 +39,7 @@ header {
 }
 
 .header-link {
-  width: 137px;
+  width: 100px;
   height: 62px;
   padding: 8px 16px;
   font-size: 14px;
@@ -71,16 +71,56 @@ h2{
   box-shadow: 1px 1px 10px  #444;
 }
 
+/* Footer */
+
 footer {
-    background-color: #FFAF00;
-    height: 207px;
-    width: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-evenly;
-  }
+  background: linear-gradient(90deg, #FFAF00 80%, #FFF3B0 100%);
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 0 12px 0;
+  box-shadow: 0 -2px 16px #ffae0045;
+  margin-top: 44px;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 7px;
+}
+.socialmedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  box-shadow: 0 2px 8px #ffd70015;
+  transition: transform 0.13s, box-shadow 0.13s;
+}
+.socialmedia a:hover {
+  transform: scale(1.11);
+  box-shadow: 0 3px 14px #ffae0055;
+}
+.socialmedia img {
+  height: 22px;
+  width: 22px;
+  object-fit: contain;
+}
+
+.legacy {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 7px;
+}
+
+/* Fin Footer */
 
 .container {
     height: 100vh;
@@ -140,7 +180,6 @@ footer {
     caret-color: #777;
     background-color: #f2f2f2;
     border: 1px solid #e5e5e500;
-
 }
 
 .split {
@@ -169,7 +208,7 @@ footer {
     font-size: 13px;
     font-weight: 700;
     cursor: pointer;
-    background: #8749f2;
+    background: #FFAF00;
     box-shadow: 0px 0px 0px 0px #ffffff, 0px 0px 0px 0px #00000000;
 }
 
@@ -228,9 +267,63 @@ hr {
 
 .payment-options button:hover {
     border: 1px solid transparent;
-    box-shadow: 0px 0px 0px 2px #8749f2;
+    box-shadow: 0px 0px 0px 2px #FFAF00;
 }
 
 .payment-options button img {
     height: 18px;
+}
+
+.checkout-btn{
+   background-color: #FFAF00;
+}
+
+@media (max-width:768px){
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: auto;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .logo {
+    position: static;
+    left: auto;
+    transform: none;
+    height: 55px;
+    width: auto;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 10px #444;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-button {
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-link {
+    width: 100px;
+    height: 48px;
+    padding: 8px 0;
+    font-size: 14px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .checkout-btn{
+    background-color: #FFAF00;
+  }
+
 }

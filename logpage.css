@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "Nunito-Regular";
     src: url(./assets/fonts/Nunito-Regular.ttf) format('truetype');
@@ -41,7 +40,7 @@ header {
   gap: 15px;
 }
 
-.header-button button {
+.header-link {
   width: 137px;
   height: 62px;
   padding: 8px 16px;
@@ -70,20 +69,56 @@ h2{
   box-shadow: 1px 1px 10px  #444;
 }
 
-footer {
-    background-color: #FFAF00;
-    height: 207px;
-    width: auto;
-    padding-top: 30px;
-    margin-top: 50px;
-  }
+/* Footer */
 
-.legacy{
+footer {
+  background:#FFAF00;
+  min-height: 100px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-
+  padding: 28px 0 12px 0;
+  box-shadow: 0 -2px 16px #ffae0045;
+  margin-top: 44px;
 }
+
+.socialmedia {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 7px;
+}
+.socialmedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  box-shadow: 0 2px 8px #ffd70015;
+  transition: transform 0.13s, box-shadow 0.13s;
+}
+.socialmedia a:hover {
+  transform: scale(1.11);
+  box-shadow: 0 3px 14px #ffae0055;
+}
+.socialmedia img {
+  height: 22px;
+  width: 22px;
+  object-fit: contain;
+}
+
+.legacy {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 7px;
+}
+
+/* Fin Footer */
 
 
 /* Style du bloc du formulaire */
@@ -192,29 +227,49 @@ footer {
   text-decoration: underline;
 }
 
-.header-button {
-  display: flex;
-  gap: 15px;
-}
+header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: auto;
+    gap: 20px;
+    width: 100%;
+  }
 
-/* Style pour les liens boutons du header */
-.header-link {
-  width: 100px;
-  height: 42px;
-  padding: 8px 16px;
-  font-size: 14px;
-  box-shadow:  #444;
-  background-color:#F2FC00;
-  border-radius: 50px;
-  align-content: center;
-  cursor: pointer;
-  text-decoration: none;
+  .logo {
+    position: static;
+    left: auto;
+    transform: none;
+    height: 35px;
+    width: auto;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 10px #444;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-}
+  .header-button {
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 
-.header-link:hover {
-  transform: scale(1.04);
-}
+  }
+
+  .header-link {
+    width: 100px;
+    height: 48px;
+    padding: 8px 0;
+    font-size: 14px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 
   form{
@@ -226,66 +281,7 @@ footer {
     width: 100px;
   }
 
-/* --- Burger Icon --- */
-.burger {
-  display: none;        /* caché sur desktop */
-  flex-direction: column;
-  justify-content: center;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  gap: 6px;
-  z-index: 1002;
-}
-.burger span {
-  display: block;
-  height: 5px;
-  width: 100%;
-  background: #333;
-  border-radius: 5px;
-  transition: 0.3s;
-}
 
-
-
-  @media (max-width: 1200px) {
-  body {
-      font-size: 16px;
-      align-content: center;
-    }
-  
-    header {
-      flex-direction: column;
-      align-items: center;
-      width: auto;
-      padding: 20px;
-      gap: 20px;
-    }
-  
-    .logo {
-      position: static;
-      transform: none;
-      height: 45px;
-      width: auto;
-      transform: translateY(10px);
-    }
-  
-    .header-button {
-      flex-direction: row;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 30px;
-      padding-bottom: 15px;
-    }
-  
-      .header-button button {
-        max-width: 200px;
-        font-size: 14px;
-        font-weight: bold;
-        border: 10px;
-        
-      }
-  }
 
   @media (max-width:768px){
 .log_box {
@@ -298,39 +294,52 @@ footer {
     padding: 100px;
     background-color: white;     
     width: 200px;
-    height: 120px;
+    height: 520px;
     text-align: center;       
 }
 
-
-
-.header-link {
-  width: 85px;
-  height: 50px;
-  padding: 8px 16px;
-  font-size: 14px;
-  box-shadow:  #444;
-  background-color:#F2FC00;
-  border-radius: 50px;
-  align-content: center;
-  cursor: pointer;
-  text-decoration: none;
-  padding: auto;;
-
-}
-
-  header {
-    height: 125px;            /* Hauteur réduite */
-    padding: 0 10px;         /* Moins de marge à gauche/droite */
+header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: auto;
+    gap: 20px;
+    width: 100%;
   }
+
   .logo {
-    height: 35px;            /* Logo plus petit */
+    position: static;
+    left: auto;
+    transform: none;
+    height: 55px;
+    width: auto;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 10px #444;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .header-button button {
-    width: 95px;
-    height: 38px;
-    font-size: 12px;
-    padding: 6px 10px;
+
+  .header-button {
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .header-link {
+    width: 100px;
+    height: 48px;
+    padding: 8px 0;
+    font-size: 14px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   footer {
     height: 90px;            /* Footer plus petit */
@@ -353,6 +362,10 @@ footer {
   flex-direction: column;
   font-family: "Nunito-Regular";
   text-align: center;
+}
+
+a{
+  text-decoration: none;
 }
 
 .log_box h1 {
@@ -378,43 +391,4 @@ footer {
   text-decoration: underline;
 }
 
-
-  .header-button {
-    position: absolute;
-    top: 90px; /* ou hauteur de ton header */
-    right: 18px;
-    background: #fff;
-    flex-direction: column;
-    gap: 0;
-    border-radius: 14px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
-    overflow: hidden;
-    width: 190px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.25s;
-    z-index: 1001;
-  }
-  .header-button.open {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .header-link {
-    padding: 16px 10px;
-    width: 100%;
-    box-sizing: border-box;
-    border-bottom: 1px solid #ffd70015;
-    text-align: left;
-    font-size: 16px;
-    background: none;
-  }
-  .header-link:last-child {
-    border-bottom: none;
-  }
-  .burger {
-    display: flex;
-    position: absolute;
-    right: 18px;
-    top: 22px;
-  }
 }
