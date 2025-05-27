@@ -55,10 +55,11 @@ header {
   font-family: "Nunito-Regular";
   color: #333;
   font-weight: bold;
-  transition: background 0.2s, transform 0.1s;
   cursor: pointer;
   border: none;
+  text-decoration: none;
 }
+
 
 .logo {
   height: 55px;
@@ -101,7 +102,6 @@ footer {
   transition: transform 0.13s, box-shadow 0.13s;
 }
 .socialmedia a:hover {
-  transform: scale(1.11);
   box-shadow: 0 3px 14px #ffae0055;
 }
 .socialmedia img {
@@ -112,6 +112,7 @@ footer {
 
 .legacy {
   display: flex;
+  align-items: center;
   flex-direction: row;
   gap: 24px;
   justify-content: center;
@@ -127,7 +128,6 @@ footer {
   padding: 40px;
   margin-top: 107px;
   background-color: #FFAF00;
-  font-family: Nunito-Regular;
   border-radius: 10px;
 }
 

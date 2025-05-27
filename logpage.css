@@ -25,32 +25,49 @@ main {
 }
 
 
+
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   padding: 0 40px;
   height: 148px;
   background-color: #FFAF00;
-  justify-content: right;
 }
 
 .header-button {
   display: flex;
   gap: 15px;
+  justify-content: center;
 }
 
 .header-link {
-  width: 137px;
+  width: 100px;
   height: 62px;
   padding: 8px 16px;
   font-size: 14px;
-  box-shadow:  #444;
-  background-color:#F2FC00;
+  box-shadow: 0 2px 8px rgba(68,68,68,0.08);
+  background-color: #F2FC00;
   border-radius: 50px;
-  align-content: end;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito-Regular";
+  color: #333;
+  font-weight: bold;
   cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
 
+.logo {
+  height: 55px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #444;
 }
 
 h2{
@@ -59,16 +76,6 @@ h2{
   justify-content: space-between;
   
 }
-
-.logo{
-  height: 55px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 10px;
-  box-shadow: 1px 1px 10px  #444;
-}
-
 /* Footer */
 
 footer {
@@ -152,9 +159,9 @@ footer {
 }
 
 /* Inputs */
-.log_box input[type="text"],
+.log_box input[type="email"],
 .log_box input[type="password"] {
-  width: 100%;
+  width: 100%;  
   height: 52px;
   font-size: 18px;
   border-radius: 14px;
@@ -227,49 +234,6 @@ footer {
   text-decoration: underline;
 }
 
-header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    height: auto;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .logo {
-    position: static;
-    left: auto;
-    transform: none;
-    height: 35px;
-    width: auto;
-    margin-bottom: 10px;
-    box-shadow: 1px 1px 10px #444;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header-button {
-    flex-direction: row;
-    gap: 10px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  .header-link {
-    width: 100px;
-    height: 48px;
-    padding: 8px 0;
-    font-size: 14px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
 
   form{

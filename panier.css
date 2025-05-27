@@ -23,15 +23,13 @@ main {
   flex-direction: column;
 }
 
-
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   padding: 0 40px;
   height: 148px;
   background-color: #FFAF00;
-  justify-content: right;
 }
 
 .header-button {
@@ -45,17 +43,21 @@ header {
   height: 62px;
   padding: 8px 16px;
   font-size: 14px;
-  box-shadow:  #444;
-  background-color:#F2FC00;
+  box-shadow: 0 2px 8px rgba(68,68,68,0.08);
+  background-color: #F2FC00;
   border-radius: 50px;
-  align-content: end;
-  cursor: pointer;
-  text-decoration: none;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  font-family: "Nunito-Regular";
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
 }
+
 
 h2{
   display: flex;
@@ -246,7 +248,7 @@ footer {
 /* --- RESPONSIVE PANIER --- */
 @media (max-width: 768px) {
   header {
-    flex-direction: columz;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -259,13 +261,10 @@ footer {
     position: static;
     left: auto;
     transform: none;
-    height: 35px;
+    height: 55px;
     width: auto;
     margin-bottom: 10px;
     box-shadow: 1px 1px 10px #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .header-button {
@@ -310,7 +309,6 @@ footer {
     max-width: 99vw;
     margin: 12px auto 5px auto;
   }
-
 
 
 /* Barres du haut */

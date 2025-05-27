@@ -24,12 +24,11 @@ main {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   padding: 0 40px;
   height: 148px;
   background-color: #FFAF00;
-  justify-content: right;
 }
 
 .header-button {
@@ -43,17 +42,21 @@ header {
   height: 62px;
   padding: 8px 16px;
   font-size: 14px;
-  box-shadow:  #444;
-  background-color:#F2FC00;
+  box-shadow: 0 2px 8px rgba(68,68,68,0.08);
+  background-color: #F2FC00;
   border-radius: 50px;
-  align-content: end;
-  cursor: pointer;
-  text-decoration: none;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  font-family: "Nunito-Regular";
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
 }
+
 
 h2{
   display: flex;
@@ -131,11 +134,13 @@ footer {
     position: relative;
 }
 
+/* Formulaire de paiement */
+
 .model {
     width: fit-content;
     height: fit-content;
     background: #ffffff;
-    box-shadow: rgb(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: #FFAF00 0px 22px 70px 4px;
     border-radius: 25px;
     max-width: 450px;
     position: absolute;
@@ -151,7 +156,7 @@ footer {
 .info-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 15px; /* Espace entre les input */
 
 }
 
@@ -165,7 +170,7 @@ footer {
 
 .input_label {
     font-size: 15px;
-    font-family: "Poppins"sans-serif;
+    font-family: "Nunt"sans-serif;
     color: #777;
     font-weight: 700;
 }
@@ -180,11 +185,12 @@ footer {
     caret-color: #777;
     background-color: #f2f2f2;
     border: 1px solid #e5e5e500;
+    padding: 2px; /* Séparation de la  date d'expiration et du CVV */
 }
 
 .split {
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 2fr 2fr;
     gap: 15px;
 }
 
@@ -194,7 +200,7 @@ footer {
 
 .input_field:focus {
     border: 1px solid transparent;
-    box-shadow: 0px 0px 0px 2px #8749f2;
+    box-shadow: 0px 0px 0px 2px #FFAF00;
     background-color: transparent;
 }
 
@@ -277,6 +283,8 @@ hr {
 .checkout-btn{
    background-color: #FFAF00;
 }
+
+
 
 @media (max-width:768px){
   header {

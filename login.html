@@ -15,25 +15,24 @@
    <a class="logo" href="./index.html"><img class="logo" src="assets/img/logo_fond_blanc.jpg" alt="Logo ComparoVoyage"></a>
 
   <nav class="header-button">
-    <a href="./panier.html" class="header-link">Panier</a>
+    <a href="panier.html" class="header-link">Panier</a>
     <a href="login.html" class="header-link">Login</a>
-    <a href="./mes_billets.html" class="header-link">Mes Billets</a>
+    <a href="mes_billets.html" class="header-link">Mes Billets</a>
   </nav>
 </header>
 
 
 
         <!-- Formulaire de log -->
-    <form class="log_box" method="post"> <!--Post pour ne pas a avoir les identifiant dans l'url-->
-        <!-- Input login et mdp -->
-        <h1>Bienvenue</h1>
-        <input type="text" id="email" name="email" required="@" placeholder="adresse@email.fr">
-        <input type="password" id="password" name="password" placeholder="Mot de passe" >
-        <input type="submit" id="connexion" value="Connexion" >
-        <input type="submit" id="signup" value="Insciption"><br>
-        <a href="#">Mot de passe oublié</a>
-    </form>
-</main>
+        <form class="log_box" method="post">
+          <h1>Bienvenue</h1>
+          <input type="email" id="email" name="email" required placeholder="adresse@email.fr">
+          <input type="password" id="password" name="password" required placeholder="Mot de passe">
+          <button type="submit" id="connexion">Connexion</button>
+          <button type="button" id="signup">Inscription</button><br>
+          <a href="#">Mot de passe oublié</a>
+        </form>
+        </main>
 
 
       <!-- Pied de page -->
@@ -43,9 +42,9 @@
       <a href="https://instagram.com/" target="_blank"> <img src="assets\icons\instagram.png" alt="instagram"> </a>
     </div>
     <div class="legacy">
-        <p>Mention légale</p>
-        <p>politique de confidentialité</p>
-        <p>CGV</p>
+        <a href="mention_légale.html">Mention légale</a>
+        <a href="politique.html">Politique de confidentialité</a>
+        <a href="cgv.html">CGV</a>
     </div>
   </footer>
 </body>
