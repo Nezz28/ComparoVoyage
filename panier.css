@@ -86,6 +86,7 @@ footer {
   padding: 28px 0 12px 0;
   box-shadow: 0 -2px 16px #ffae0045;
   margin-top: 44px;
+  text-decoration: none;
 }
 
 .socialmedia {
@@ -121,6 +122,7 @@ footer {
   gap: 24px;
   justify-content: center;
   margin-top: 7px;
+  text-decoration: none;
 }
 
 
@@ -129,7 +131,6 @@ footer {
   background: #fff;
   border: 3px solid #FFAF00;
   border-radius: 18px;
-  box-shadow: 0 6px 20px rgba(255, 175, 0, 0.11), 0 2px 12px #f7cf5d13;
   padding: 26px 22px;
   width: 410px;
   margin: 36px auto 0 auto;
@@ -141,10 +142,8 @@ footer {
   transition: box-shadow 0.22s, border-color 0.22s;
   position: relative;
 }
-.cart-card:hover {
-  border-color: #FFD700;
-  box-shadow: 0 10px 36px #ffe06655;
-}
+
+
 .cart-info {
   flex: 1;
   display: flex;
@@ -167,11 +166,10 @@ footer {
   font-size: 1.25rem;
   font-weight: bold;
   color: #1c1c1c;
-  background: #FFF7B0;
+  background: #FFAF00;
   border-radius: 10px;
   padding: 6px 15px;
   margin-bottom: 6px;
-  box-shadow: 0 1.5px 6px #ffea0055;
 }
 .btn-remove {
   background: #fff5e1;
@@ -182,7 +180,6 @@ footer {
   font-weight: bold;
   padding: 7px 20px;
   cursor: pointer;
-  box-shadow: 0 1.5px 8px #ffd50024;
   transition: background 0.18s, color 0.13s, transform 0.13s;
 }
 .btn-remove:hover {
@@ -200,10 +197,8 @@ footer {
   font-weight: 700;
   margin: 45px auto 30px auto;
   padding: 18px 68px;
-  box-shadow: 0 2px 16px #ffaf0036;
   cursor: pointer;
   display: block;
-  transition: background 0.19s, transform 0.14s;
   letter-spacing: 0.7px;
 }
 .btn-pay:hover {

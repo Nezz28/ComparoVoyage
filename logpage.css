@@ -16,6 +16,11 @@ html, body {
   text-align: center;
 }
 
+a{
+  text-decoration: none;
+  color: #000;
+}
+
 
 /* Le main prend toute la hauteur restante entre header et footer */
 main {
@@ -89,6 +94,7 @@ footer {
   padding: 28px 0 12px 0;
   box-shadow: 0 -2px 16px #ffae0045;
   margin-top: 44px;
+  text-decoration: none;
 }
 
 .socialmedia {
@@ -123,6 +129,7 @@ footer {
   gap: 24px;
   justify-content: center;
   margin-top: 7px;
+  text-decoration: none;
 }
 
 /* Fin Footer */
@@ -310,10 +317,7 @@ header {
     padding-top: 10px;
     margin-top: 20px;
   }
-  .legacy p {
-    font-size: 12px;
-    margin: 2px 0;
-  }
+  
   .socialmedia img {
     height: 22px;
   }
