@@ -14,3 +14,12 @@ if (logBox) {
   }
 });
 }
+
+
+
+const cardPanier = document.querySelectorAll('.cart-card');
+for (let i = 0; i < cardPanier.length; i++) {
+  cardPanier[i].addEventListener('click', function() {
+    cardPanier[i].remove();
+  });
+}
