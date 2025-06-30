@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 1024">
+  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#Dégradé_sans_nom_25);
+      }
+
+      .st1 {
+        fill: url(#Dégradé_sans_nom_26);
+      }
+
+      .st2 {
+        fill: url(#Dégradé_sans_nom_2);
+      }
+
+      .st3 {
+        fill: url(#Dégradé_sans_nom_23);
+      }
+
+      .st4 {
+        font-size: 19.72px;
+      }
+
+      .st4, .st5 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+      }
+
+      .st6 {
+        fill: url(#Dégradé_sans_nom_22);
+      }
+
+      .st7 {
+        fill: url(#Dégradé_sans_nom_24);
+      }
+
+      .st5 {
+        font-size: 19.33px;
+      }
+
+      .st8 {
+        fill: url(#Dégradé_sans_nom_21);
+      }
+
+      .st9 {
+        fill: url(#Dégradé_sans_nom_27);
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom_2" data-name="Dégradé sans nom 2" x1="81.81" y1="288.51" x2="205.82" y2="288.51" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffaf00"/>
+      <stop offset="1" stop-color="#ff0"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_21" data-name="Dégradé sans nom 2" x1="226.91" y1="421.23" x2="350.93" y2="421.23" xlink:href="#Dégradé_sans_nom_2"/>
+    <linearGradient id="Dégradé_sans_nom_22" data-name="Dégradé sans nom 2" y1="543.95" y2="543.95" xlink:href="#Dégradé_sans_nom_2"/>
+    <linearGradient id="Dégradé_sans_nom_23" data-name="Dégradé sans nom 2" x1="226.91" y1="701.64" x2="350.93" y2="701.64" xlink:href="#Dégradé_sans_nom_2"/>
+    <linearGradient id="Dégradé_sans_nom_24" data-name="Dégradé sans nom 2" x1="906.69" y1="283.38" x2="1033.2" y2="283.38" xlink:href="#Dégradé_sans_nom_2"/>
+    <linearGradient id="Dégradé_sans_nom_25" data-name="Dégradé sans nom 2" x1="1054.72" y1="418.77" x2="1181.23" y2="418.77" xlink:href="#Dégradé_sans_nom_2"/>
+    <linearGradient id="Dégradé_sans_nom_26" data-name="Dégradé sans nom 2" x1="906.69" y1="543.95" x2="1033.2" y2="543.95" xlink:href="#Dégradé_sans_nom_2"/>
+    <linearGradient id="Dégradé_sans_nom_27" data-name="Dégradé sans nom 2" x1="1054.72" y1="704.82" x2="1181.23" y2="704.82" xlink:href="#Dégradé_sans_nom_2"/>
+  </defs>
+  <circle class="st2" cx="143.82" cy="288.51" r="62.01"/>
+  <text class="st5" transform="translate(99.66 294.19)"><tspan x="0" y="0">Strasbourg</tspan></text>
+  <circle class="st8" cx="288.92" cy="421.23" r="62.01"/>
+  <text class="st5" transform="translate(256.25 426.9)"><tspan x="0" y="0">Paris Est</tspan></text>
+  <circle class="st6" cx="143.82" cy="543.95" r="62.01"/>
+  <text class="st5" transform="translate(122.1 549.62)"><tspan x="0" y="0">Dijon</tspan></text>
+  <circle class="st3" cx="288.92" cy="701.64" r="62.01"/>
+  <text class="st5" transform="translate(269.49 707.31)"><tspan x="0" y="0">Lyon</tspan></text>
+  <circle class="st7" cx="969.95" cy="283.38" r="63.26"/>
+  <text class="st4" transform="translate(924.9 289.17)"><tspan x="0" y="0">Strasbourg</tspan></text>
+  <circle class="st0" cx="1117.97" cy="418.77" r="63.26"/>
+  <text class="st4" transform="translate(1084.64 424.55)"><tspan x="0" y="0">Paris Est</tspan></text>
+  <circle class="st1" cx="969.95" cy="543.95" r="63.26"/>
+  <text class="st4" transform="translate(947.79 549.74)"><tspan x="0" y="0">Dijon</tspan></text>
+  <circle class="st9" cx="1117.97" cy="704.82" r="63.26"/>
+  <text class="st4" transform="translate(1098.15 710.61)"><tspan x="0" y="0">Lyon</tspan></text>
+</svg>

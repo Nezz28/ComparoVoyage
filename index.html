@@ -3,33 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="comparateur">
-  <title>ComparoVoyage - Recherche de Trajet</title>
+  <meta name="description" content="Bienvenue sur Comparo Voyage ! Ce site vous permet de comparer et acheter vos billet de train ou de bus ">
+  <meta name="keywords" content="comparateur de prix, ComparoVoyage,">
+  <meta name="theme-color" content="#FFAF00">
+  <title>Comparo Voyage - Page de recherche de trajets.</title>
   <link rel="icon" type="image/x-icon" href="./assets/img/Logo Comparo Voyage.png">
   <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css">
   <script src="./js/script.js" defer></script>
 </head>
 <body>
-  <main>
     <!-- En-tête -->
 <header>
-   <a class="logo" href="./index.html"><img class="logo" src="./assets/img/logo_fond_blanc.jpg" alt="Logo ComparoVoyage"></a>
-
-  <nav class="header-button">
-    <a href="panier.html" class="header-link">Panier</a>
-    <a href="login.html" class="header-link">Login</a>
-    <a href="mes_billets.html" class="header-link">Mes Billets</a>
+  <nav>
+    <ul>
+      <li>
+        <h1><img class="logo" src="./assets/img/logo_fond_blanc.jpg" alt="ComparoVoyage - Le comparateur de prix nouvelle génération"></a></h1>
+        <a class="btn-blanc" href="panier.html"><i class="fa-solid fa-basket-shopping"></i></a>
+        <a class="btn-blanc" href="login.html"><i class="fa-solid fa-user"></i></a>
+        <a class="btn-blanc" href="mes_billets.html"><i class="fa-solid fa-ticket"></i></a>
+      </li>
+    </ul>
   </nav>
 </header>
 
+<main>
 
     <!-- Bannière défilante -->
-    <div class="banniere">
+    <section class="banniere">
       <div class="texte-defilant">
-        Ceci est un projet d'école
+        <h2>Bienvenue sur Comparo Voyage ! Ce site vous permet de comparer et acheter vos billet de train ou de bus</h2>
       </div>
-    </div>
+    </section>
 
     <!-- Formulaire de recherche -->
     <form class="form-container">
@@ -100,22 +106,20 @@
 
     <!-- Section actualités -->
    
-    <section class="actus-container">
-      <div class="actus-box">
-        <h3>Bienvenue sur mon site !</h3>
-        <p>Ce site vous permet de comparer et acheter vos billet de train ou de bus</p>
-        <img src="assets/img/new.png" alt="Nouveau" class="new-icon">
-      </div>
-
-      <div class="actus-box">
-        <h3>Les partenaires:</h3>
-        <div class="partenaires">
-          <img src="assets/img/sncf.png" alt="Logo SNCF">
-          <img src="assets/img/blablacar.png" alt="Logo BlaBlaCar">
-        </div>
-      </div>
-    </section>
-  </main>
+<section class="slider-container">
+	<div class="slider-wrapper">
+		<div class="slider">
+			<img id="slide-1" src="/assets/img/enzo_agc_molsheim.jpg" alt="" />
+			<img id="slide-2" src="/assets/img/bertrand_tgv.jpg" alt="" />
+			<img id="slide-3" src="/assets/img/regiolis_lio.jpg" alt="" />
+		</div>
+		<div class="slider-nav">
+			<a href="#slide-1"></a>
+			<a href="#slide-2"></a>
+			<a href="#slide-3"></a>
+		</div>
+	</div>
+</section>
 
   <!-- Pied de page -->
   <footer>

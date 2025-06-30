@@ -6,22 +6,25 @@
   <title>ComparoVoyage</title>
   <link rel="icon" type="image/x-icon" href="assets\img\Logo Comparo Voyage.png">
   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
   <link rel="fonts" href="/assets/fonts/Nunito-Regular.ttf">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="/js/script.js"></script>
 </head>
 <body>
-  <main>
     <!-- En-tête -->
-    <header>
-      <img class="logo" src="assets/img/logo_fond_blanc.jpg" alt="Logo ComparoVoyage">
-  <nav class="header-button">
-    <a href="panier.html" class="header-link">Panier</a>
-    <a href="login.html" class="header-link">Login</a>
-    <a href="mes_billets.html" class="header-link">Mes Billets</a>
+<header>
+  <nav>
+    <ul>
+      <li>
+        <h1><img class="logo" src="./assets/img/logo_fond_blanc.jpg" alt="ComparoVoyage - Le comparateur de prix nouvelle génération"></a></h1>
+        <a class="btn-blanc" href="panier.html">Panier</a>
+        <a class="btn-blanc" href="login.html">Login</a>
+        <a class="btn-blanc" href="mes_billets.html">Mes Billets</a>
+      </li>
+    </ul>
   </nav>
 </header>
-</div>
 <main>
     <section class="result-section">
         <div class="top-bar">
@@ -49,7 +52,7 @@
           <div class="result-price">
             <p>Prix:</p>
             <strong>80€</strong>
-            <a class="details-btn" href="panier.html">Ajouter au panier</a>
+            <button type="submit" class="details-btn">Ajouter au panier</button>
           </div>
         </div>
       
@@ -78,32 +81,33 @@
           </div>
         
           <!-- Troisième résultat -->
-          <div class="result-card">
+         <div class="result-card">
             <div class="result-left">
-              <img src="assets/img/blablacar.png" alt="BlaBlaCar Logo" class="company-logo">
-              <p>Strasbourg<br><small>Départ: 13h30</small></p>
+              <img src="assets/img/sncf.png" alt="SNCF Logo" class="company-logo">
+              <p>Strasbourg<br><small>Départ: 19h19</small></p>
             </div>
         
             <div class="result-center">
-                <p><small>Temps trajet: 1h59</small></p>
+              <p><small>Temps trajet: 1h59</small></p>
               <div class="line"></div>
             </div>
         
             <div class="result-right">
-              <p>Paris Est<br><strong>Arrivée: 17h00</strong></p>
+              <p>Paris Est<br><strong>Arrivée: 21h25</strong></p>
+              <img src="assets/img/blablacar.png" alt="TER Fluo" class="company-logo">
             </div>
         
             <div class="result-price">
               <p>Prix:</p>
-              <strong>34,98€</strong>
+              <strong>30€</strong>
               <button class="details-btn">Détails</button>
             </div>
           </div>
 </main>
   <footer>
     <div class="socialmedia">
-      <a href="https://facebook.com" target="_blank"> <img src="assets\icons\facebook.png" alt="facebook"> </a>
-      <a href="https://instagram.com/" target="_blank"> <img src="assets\icons\instagram.png" alt="instagram"> </a>
+      <a href="https://facebook.com"target="_blank"> <img src="assets\icons\facebook.png" alt="facebook"> </a>
+      <a href="https://instagram.com/"target="_blank"> <img src="assets\icons\instagram.png" alt="instagram"> </a>
     </div>
     <div class="legacy">
         <a href="mention_légale.html">Mention légale</a>

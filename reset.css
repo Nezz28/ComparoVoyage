@@ -1,0 +1,27 @@
+/* enlever les marges naturelles + reset du body/html */
+
+html, body {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* enlever le style des listes */
+
+ul, ol {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+/* corriger l’affichage des images */
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}

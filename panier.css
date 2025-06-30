@@ -16,6 +16,10 @@ html, body {
   text-decoration: none;
 }
 
+body{
+  background-image: url(/assets/img/destination.svg);
+}
+
 /* Le main prend toute la hauteur restante entre header et footer */
 main {
   flex: 1;
@@ -239,6 +243,36 @@ footer {
 .back-button:hover {
   background: #ffe066;
 }
+
+.city-circle {
+  position: fixed;
+  z-index: 10;
+  width: 70px;
+  height: 70px;
+  background: #fffbe7;
+  border: 3px solid #FFAF00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito-Regular", Arial, sans-serif;
+  font-weight: bold;
+  color: #FFAF00;
+  box-shadow: 0 2px 12px #ffae0040;
+  font-size: 1rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+.city-paris    { top: 24px; left: 50%; transform: translateX(-50%);}
+.city-lyon     { top: 35%; left: 10px;}
+.city-marseille{ bottom: 40px; left: 60px;}
+.city-toulouse { bottom: 24px; right: 80px;}
+.city-nice     { top: 80px; right: 30px;}
+.city-nantes   { top: 60%; left: 0;}
+.city-bordeaux { bottom: 100px; left: 10%;}
+.city-lille    { top: 120px; right: 10%;}
+
 
 /* --- RESPONSIVE PANIER --- */
 @media (max-width: 768px) {
