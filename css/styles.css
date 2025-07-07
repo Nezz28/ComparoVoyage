@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Nunito-Regular";
-  src: url(./assets/fonts/Nunito-Regular.ttf) format('truetype');
+  src: url('../assets/fonts/Nunito-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,6 +27,7 @@ header{
   background-color: var(--primary-color);
   padding: 15px;
   text-align: center;
+  align-items: center;
 }
 
 header ul {
@@ -36,7 +37,8 @@ header ul {
 
 li{
   display: flex;
-  justify-self: center;
+  justify-content: center;
+  align-items: center;
   gap: 15px; 
 }
 

@@ -1,8 +1,8 @@
 @font-face {
-    font-family: "Nunito-Regular";
-    src: url(./assets/fonts/Nunito-Regular.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Nunito-Regular";
+  src: url('../assets/fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Assure que toute la page prend 100% de la hauteur */
@@ -23,63 +23,62 @@ a{
 
 
 /* Le main prend toute la hauteur restante entre header et footer */
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+:root{
+  --primary-color: #FFAF00;
+
 }
 
+html, body {
+  font-family: "Nunito-Regular";
+}
 
+h1{
+  margin: 0;
+}
 
-header {
-  display: flex;
-  justify-content: right;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header{
+  background-color: var(--primary-color);
+  padding: 15px;
+  text-align: center;
   align-items: center;
-  padding: 0 40px;
-  height: 148px;
-  background-color: #FFAF00;
 }
 
-.header-button {
+header ul {
   display: flex;
-  gap: 15px;
   justify-content: center;
+  
 }
 
-.header-link {
+li{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 15px; 
+}
+
+.btn-blanc{
   width: 100px;
   height: 62px;
-  padding: 8px 16px;
-  font-size: 14px;
+  font-size: 16px;
   box-shadow: 0 2px 8px rgba(68,68,68,0.08);
-  background-color: #F2FC00;
+  background-color: #ffffff;
   border-radius: 50px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Nunito-Regular";
-  color: #333;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  text-decoration: none;
+  display: flex;                
+  align-items: center;          
+  justify-content: center;      
 }
 
-.logo {
+.logo{
   height: 55px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 15px;
   border-radius: 10px;
   box-shadow: 1px 1px 10px #444;
-}
-
-h2{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
+  justify-self: center;
 }
 /* Footer */
 
@@ -255,108 +254,40 @@ footer {
 
 
   @media (max-width:768px){
-.log_box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  border: 6px solid #FFAF00;
-   border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
-    padding: 100px;
-    background-color: white;     
-    width: 200px;
-    height: 520px;
-    text-align: center;       
+/* Fix général pour éviter le scroll horizontal */
+html, body {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    height: auto;
-    gap: 20px;
-    width: 100%;
-  }
+/* Assure que tout enfant ne dépasse pas l'écran */
+*{
+  box-sizing: border-box !important;
+}
 
-  .logo {
-    position: static;
-    left: auto;
-    transform: none;
-    height: 55px;
-    width: auto;
-    margin-bottom: 10px;
-    box-shadow: 1px 1px 10px #444;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header-button {
-    flex-direction: row;
-    gap: 10px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  .header-link {
-    width: 100px;
-    height: 48px;
-    padding: 8px 0;
-    font-size: 14px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  footer {
-    height: 90px;            /* Footer plus petit */
-    padding-top: 10px;
-    margin-top: 20px;
-  }
-  
-  .socialmedia img {
-    height: 22px;
-  }
-
-  html, body {
-  height: 100%;
-  margin: 0;
+main {
+  width: 100vw;
+  max-width: 100vw;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  font-family: "Nunito-Regular";
-  text-align: center;
+  margin: 0;
 }
 
-a{
-  text-decoration: none;
+/* Formulaire parfaitement responsive */
+.log_box {
+  width: 100%;
+  max-width: 98vw;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.log_box h1 {
-  font-size: 2.3rem;
-  margin-bottom: 18px;
-  font-family: "Nunito-Regular", Arial, sans-serif;
-  color: #000;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* Lien mot de passe oublié */
-.log_box a {
-  color: #FFAF00;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: text-decoration 0.2s, color 0.18s;
-  margin-top: -40px;
-}
-
-.log_box a:hover {
-  color: #ff8000;
-  text-decoration: underline;
-}
-
-}
+ footer {
+  width: 100vw !important;
+  min-width: 0;
+  left: 0;
+  right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}}

@@ -1,107 +1,73 @@
 @font-face {
-    font-family: "Nunito-Regular";
-    src: url(./assets/fonts/Nunito-Regular.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Nunito-Regular";
+  src: url('../assets/fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Assure que toute la page prend 100% de la hauteur */
-html, body {
+:root{
+  --primary-color: #FFAF00;
+
+}
+
+body{
   height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   font-family: "Nunito-Regular";
+  text-decoration: none;
+}
+html, body {
+  font-family: "Nunito-Regular";
 }
 
-/* Le main prend toute la hauteur restante entre header et footer */
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+h1{
+  margin: 0;
 }
 
-
-header {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding: 0 40px;
-  height: 148px;
-  background-color: #FFAF00;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.header-button {
+header{
+  background-color: var(--primary-color);
+  padding: 15px;
+  text-align: center;
+}
+
+header ul {
   display: flex;
-  gap: 15px;
   justify-content: center;
 }
 
-.header-link {
+li{
+  display: flex;
+  justify-self: center;
+  gap: 15px; 
+}
+
+.btn-blanc{
   width: 100px;
   height: 62px;
-  padding: 8px 16px;
-  font-size: 14px;
+  font-size: 16px;
   box-shadow: 0 2px 8px rgba(68,68,68,0.08);
-  background-color: #F2FC00;
+  background-color: #ffffff;
   border-radius: 50px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Nunito-Regular";
-  color: #333;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  text-decoration: none;
-}
-
-
-.header-button {
-  display: flex;
-  gap: 15px;
-  display: flex;
-  justify-content: center;
-}
-
-/* Style pour les liens boutons du header */
-.header-link {
-  width: 100px;
-  height: 42px;
-  padding: 8px 16px;
-  font-size: 14px;
-  box-shadow:  #444;
-  background-color:#F2FC00;
-  border-radius: 50px;
-  align-content: center;
-  cursor: pointer;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.header-link:hover {
-  transform: scale(1.04);
-}
-
-h2{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
+  display: flex;                
+  align-items: center;          
+  justify-content: center;      
 }
 
 .logo{
   height: 55px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 15px;
   border-radius: 10px;
-  box-shadow: 1px 1px 10px  #444;
+  box-shadow: 1px 1px 10px #444;
+  justify-self: center;
 }
 
 .qrcode-btn {

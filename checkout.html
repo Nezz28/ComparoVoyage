@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ComparoVoyage</title>
   <link rel="icon" type="image/x-icon" href="./assets/img/Logo Comparo Voyage.png">
-  <link rel="stylesheet" href="./checkout.css">
+  <link rel="stylesheet" href="./css/checkout.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="./js/script.js" defer></script>
   <!-- <link rel="fonts" href="/assets/fonts/Nunito-Regular.ttf"> -->
@@ -13,21 +13,18 @@
 <body>
   <main>
     <!-- En-tête -->
-    <header>
-      <img class="logo" src="assets/img/logo_fond_blanc.jpg" alt="Logo ComparoVoyage">
-   <div class="burger" id="burger-menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <nav class="header-button">
-    <a href="panier.html" class="header-link">Panier</a>
-    <a href="login.html" class="header-link">Login</a>
-    <a href="mes_billets.html" class="header-link">Mes Billets</a>
+<header>
+  <nav>
+    <ul>
+      <li>
+        <h1><img class="logo" src="./assets/img/logo_fond_blanc.jpg" alt="ComparoVoyage - Le comparateur de prix nouvelle génération"></a></h1>
+        <a class="btn-blanc" href="panier.html"><i class="fa fa-shopping-basket"></i></a>
+        <a class="btn-blanc" href="login.html"><i class="fa fa-user"></i></a>
+        <a class="btn-blanc" href="mes_billets.html"><i class="fa fa-ticket"></i></a>
+      </li>
+    </ul>
   </nav>
-    </header>
-<body>
+</header>
      <div class="container">
         <div class="model">
             <form class="form" method="post">
