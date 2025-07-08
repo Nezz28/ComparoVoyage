@@ -7,7 +7,7 @@
   <meta name="keywords" content="comparateur de prix, ComparoVoyage,">
   <meta name="theme-color" content="#FFAF00">
   <title>Comparo Voyage - Page de recherche de trajets.</title>
-  <link rel="icon" type="image/x-icon" href="./assets/img/Logo Comparo Voyage.png">
+  <link rel="icon" type="image/png" href="./assets/img/logo-comparo-voyage.png">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css">
@@ -19,7 +19,11 @@
   <nav>
     <ul>
       <li>
-        <h1><img class="logo" src="./assets/img/logo_fond_blanc.jpg" alt="ComparoVoyage - Le comparateur de prix nouvelle génération"></a></h1>
+        <h1>
+          <a href="index.html">
+            <img class="logo" src="./assets/img/logo_fond_blanc.jpg" alt="ComparoVoyage - Le comparateur de prix nouvelle génération">
+          </a>
+        </h1>
         <a class="btn-blanc" href="panier.html"><i class="fa-solid fa-basket-shopping"></i></a>
         <a class="btn-blanc" href="login.html"><i class="fa-solid fa-user"></i></a>
         <a class="btn-blanc" href="mes_billets.html"><i class="fa-solid fa-ticket"></i></a>
@@ -42,18 +46,18 @@
       <div class="left-section">
         <!-- Input départ et destination -->
         <label for="depart">Où voulez vous partir ?</label>
-        <input type="text" required id="depart" name="depart" placeholder="Départ : Gare/Ville/Arrêt">
-        <input type="text" required id="destination" name="destination" placeholder="Destination : Gare/Ville/Arrêt">
+        <input type="text" id="depart" name="depart" placeholder="Départ : Gare/Ville/Arrêt">
+        <input type="text" id="destination" name="destination" placeholder="Destination : Gare/Ville/Arrêt">
       </div>
 
       <div class="right-section">
         <!-- Choix de la date -->
         <label for="date">Quand ?</label>
         <div class="datetime-inputs">
-          <input type="date" required id="date" name="date" value="">
+          <input type="date" id="date" name="date" value="">
           <p> (Sélection de l'horaire)</p>
           <!-- Sélection des heures -->
-          <select name="hour" required>
+          <select name="hour">
             <option value="00">00</option>
             <option value="01">01</option>
             <option value="02">02</option>
@@ -99,33 +103,33 @@
         <!-- Boutons d'action -->
         <div class="actions">
           <button type="reset" class="reset">Réinitialiser</button>
-            <a href="search_result.html" class="search-btn" type="button" id="search-btn">LANCER LA RECHERCHE </a>
+            <a  href="search_result.html" class="search-btn" id="search-btn">LANCER LA RECHERCHE</a>
         </div>
       </div>
     </form>
 
-    <!-- Section actualités -->
-   
-<section class="slider-container">
-	<div class="slider-wrapper">
-		<div class="slider">
-			<img id="slide-1" src="./assets/img/enzo_agc_molsheim.jpg" alt="" />
-			<img id="slide-2" src="./assets/img/bertrand_tgv.jpg" alt="" />
-			<img id="slide-3" src="./assets/img/regiolis_lio.jpg" alt="" />
-		</div>
-		<div class="slider-nav">
-			<a href="#slide-1"></a>
-			<a href="#slide-2"></a>
-			<a href="#slide-3"></a>
-		</div>
-	</div>
-</section>
-
+    <!-- Section slider -->
+    <section class="slider-container">
+      <h2>Galerie de photos</h2>
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img id="slide-1" src="./assets/img/enzo_agc_molsheim.jpg" alt="">
+          <img id="slide-2" src="./assets/img/bertrand_tgv.jpg" alt="">
+          <img id="slide-3" src="./assets/img/regiolis_lio.jpg" alt="">
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+    </section>
+</main>
   <!-- Pied de page -->
   <footer>
     <div class="socialmedia">
-      <a href="https://facebook.com" target="_blank"> <img src="assets\icons\facebook.png" alt="facebook"> </a>
-      <a href="https://instagram.com/" target="_blank"> <img src="assets\icons\instagram.png" alt="instagram"> </a>
+      <a href="https://facebook.com" target="_blank"> <img src="assets/icons/facebook.png" alt="facebook"> </a>
+      <a href="https://instagram.com/" target="_blank"> <img src="assets/icons/instagram.png" alt="instagram"> </a>
     </div>
     <div class="legacy">
         <a href="mention_légale.html">Mention légale</a>

@@ -248,76 +248,50 @@ footer {
   background: #ffe066;
 }
 
-.city-circle {
-  position: fixed;
-  z-index: 10;
-  width: 70px;
-  height: 70px;
-  background: #fffbe7;
-  border: 3px solid #FFAF00;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Nunito-Regular", Arial, sans-serif;
-  font-weight: bold;
-  color: #FFAF00;
-  box-shadow: 0 2px 12px #ffae0040;
-  font-size: 1rem;
-  pointer-events: none;
-  user-select: none;
-}
-
-.city-paris    { top: 24px; left: 50%; transform: translateX(-50%);}
-.city-lyon     { top: 35%; left: 10px;}
-.city-marseille{ bottom: 40px; left: 60px;}
-.city-toulouse { bottom: 24px; right: 80px;}
-.city-nice     { top: 80px; right: 30px;}
-.city-nantes   { top: 60%; left: 0;}
-.city-bordeaux { bottom: 100px; left: 10%;}
-.city-lille    { top: 120px; right: 10%;}
-
 
 /* --- RESPONSIVE PANIER --- */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    height: auto;
-    gap: 20px;
-    width: 100%;
-  }
+header{
+  background-color: var(--primary-color);
+  padding: 15px;
+  text-align: center;
+  align-items: center;
+}
 
-  .logo {
-    position: static;
-    left: auto;
-    transform: none;
-    height: 55px;
-    width: auto;
-    margin-bottom: 10px;
-    box-shadow: 1px 1px 10px #444;
-  }
+ ul {
+  display: flex;
+  justify-content: center;
+  
+}
 
-  .header-button {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
+li{
+  justify-self: center;
+  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
 
-  .header-link {
-    width: 100px;
-    height: 48px;
-    padding: 8px 0;
-    font-size: 14px;
-    border-radius: 50px;
-    align-items: center;
-    justify-content: center;
-  }
+.btn-blanc{
+  width: 100px;
+  height: 62px;
+  font-size: 30px;
+  box-shadow: 0 2px 8px rgba(68,68,68,0.08);
+  background-color: #ffffff;
+  border-radius: 50px;
+  display: flex;                
+  align-items: center;          
+  justify-content: center;    
+}
+
+.logo{
+  height: 55px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #444;
+  justify-self: center;
+}
 
 
   .cart-card {
