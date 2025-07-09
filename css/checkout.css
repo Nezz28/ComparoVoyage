@@ -293,7 +293,6 @@ header{
  ul {
   display: flex;
   justify-content: center;
-  
 }
 
 li{
@@ -308,7 +307,7 @@ li{
 .btn-blanc{
   width: 100px;
   height: 62px;
-  font-size: 16px;
+  font-size: 30px;
   box-shadow: 0 2px 8px rgba(68,68,68,0.08);
   background-color: #ffffff;
   border-radius: 50px;
