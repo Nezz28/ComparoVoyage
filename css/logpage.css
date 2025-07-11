@@ -6,14 +6,17 @@
 }
 
 /* Assure que toute la page prend 100% de la hauteur */
-html, body {
-  height: 100%;
+body{
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   font-family: "Nunito-Regular";
-  text-align: center;
+  text-decoration: none;
+}
+html, body {
+  font-family: "Nunito-Regular";
 }
 
 a{
@@ -46,6 +49,7 @@ header{
   padding: 15px;
   text-align: center;
   align-items: center;
+  height: 115px;
 }
 
 header ul {
@@ -82,18 +86,20 @@ li{
 /* Footer */
 
 footer {
-  background:#FFAF00;
-  min-height: 100px;
+  background: #FFAF00;
+  height: 100px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 28px 0 12px 0;
-  box-shadow: 0 -2px 16px #ffae0045;
-  margin-top: 44px;
-  text-decoration: none;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
 }
+
+
 
 .socialmedia {
   display: flex;
@@ -147,6 +153,7 @@ footer {
   align-items: center;
   gap: 22px;
   transition: box-shadow 0.2s;
+  margin-bottom: 120px;
 }
 
 .log_box:hover {
@@ -200,7 +207,7 @@ footer {
 }
 
 .log_box #signup{
-    width: 100%;
+  width: 100%;
   max-width: 210px;
   height: 50px;
   border-radius: 40px;
@@ -239,19 +246,13 @@ footer {
   text-decoration: underline;
 }
 
-
-
   form{
     display: flex;
     text-align: center;
   }
-  
   #connexion{
     width: 100px;
   }
-
-
-
   @media (max-width:768px){
 /* Fix général pour éviter le scroll horizontal */
 html, body {
@@ -271,6 +272,7 @@ header{
   padding: 15px;
   text-align: center;
   align-items: center;
+  height: 185px;
 }
 
  ul {

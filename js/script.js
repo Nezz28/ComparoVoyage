@@ -9,8 +9,6 @@ if (logBox) {
 });
 }
 
-
-
 const cardPanier = document.querySelectorAll('.cart-card');
 for (let i = 0; i < cardPanier.length; i++) {
   cardPanier[i].addEventListener('click', function() {
@@ -20,3 +18,9 @@ for (let i = 0; i < cardPanier.length; i++) {
 const resultCards = document.querySelectorAll('.result-card');
 const cartContainer = document.querySelector('.cart-container'); // Assurez-vous que ce conteneur existe dans votre HTML
 
+const checkoutBtn = document.querySelector('.checkout-btn');
+if (checkoutBtn) {
+  checkoutBtn.addEventListener('click', function() {
+    alert("Vous avez payé !");
+  });
+}
